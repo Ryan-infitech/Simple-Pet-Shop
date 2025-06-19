@@ -1,39 +1,100 @@
-# Welcome to your Lovable project
+# Welcome to Viiona Pet Shop
 
-## Project info
+## About This Project
 
-**URL**: https://lovable.dev/projects/59f14836-63d6-4126-b44f-c96ee3c42a24
+Viiona Pet Shop is a full-stack e-commerce application for pet products and services. The project uses:
 
-## How can I edit this code?
+- **Frontend**: React with TypeScript, Vite, and Shadcn UI components
+- **Backend**: Node.js with Express
+- **Database**: MySQL
 
-There are several ways of editing your application.
+## Getting Started
 
-**Use Lovable**
+### Prerequisites
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/59f14836-63d6-4126-b44f-c96ee3c42a24) and start prompting.
+- Node.js (v16+)
+- npm (v7+)
+- MySQL database
 
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
+### Installation
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+# Clone the repository
+git clone <repository-url>
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+# Navigate to the project directory
+cd viiona-pet-shop
+
+# Install dependencies for the frontend
+npm install
+
+# Install dependencies for the backend
+cd backend
+npm install
+cd ..
+```
+
+### Configuration
+
+1. Create a `.env` file in the frontend root:
+
+```
+VITE_API_URL=http://localhost:3000/api
+```
+
+2. Configure the backend database in `backend/config/database.js`
+
+### Running the Application
+
+You can run both the frontend and backend with a single command:
+
+```sh
+npm run dev:all
+```
+
+Or run them separately:
+
+```sh
+# Run the backend server
+npm run backend
+
+# In another terminal, run the frontend dev server
+npm run dev
+```
+
+## Features
+
+- Product catalog with categories and search
+- Service booking
+- Shopping cart
+- User authentication
+- Admin dashboard for managing products and services
+
+## Backend API Documentation
+
+The backend provides the following API endpoints:
+
+- **Products**: `/api/products`
+- **Categories**: `/api/categories`
+- **Services**: `/api/services`
+- **Authentication**: `/api/auth`
+- **Cart**: `/api/cart`
+- **Orders**: `/api/orders`
+
+## Application Structure
+
+- `src/`: Frontend source code
+- `backend/`: Backend API server
+- `public/`: Static assets
 
 # Step 3: Install the necessary dependencies.
+
 npm i
 
 # Step 4: Start the development server with auto-reloading and an instant preview.
+
 npm run dev
+
 ```
 
 **Edit a file directly in GitHub**
@@ -71,3 +132,4 @@ Yes, you can!
 To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
 
 Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+```
