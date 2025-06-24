@@ -55,7 +55,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-2 text-muted-foreground">
                 <MapPin className="h-4 w-4" />
-                <span>Jl. Pet Love No. 123, Jakarta</span>
+                <span>Jl. Pet Love No. 123, Padang</span>
               </div>
               <div className="flex space-x-3 pt-2">
                 <Instagram className="h-5 w-5 text-muted-foreground hover:text-primary cursor-pointer transition-colors" />
@@ -66,7 +66,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t mt-8 pt-8 text-center text-sm text-muted-foreground">
-          © 2024 petshop_viiona. Semua hak dilindungi.
+          © 2025 petshop_viiona. Semua hak dilindungi.
         </div>
       </div>
     </footer>
